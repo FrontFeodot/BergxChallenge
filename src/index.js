@@ -6,10 +6,9 @@ import configureStore from './store/configureStore';
 import ItemList from './components/ItemList';
 
 const store = configureStore();
-
 render(
-    <Provider store={store}>
-        <ItemList />
-    </Provider>,
-    document.getElementById('app')
+  <Provider store={store}>
+    <ItemList />
+  </Provider>,
+  document.getElementById('app'),
 );
